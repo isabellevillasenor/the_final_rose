@@ -1,0 +1,10 @@
+<h1 style="text-align:center; color:#D4B1AA;"><%= @outing.name %></h1>
+
+<h3 style="text-align:center; color:#A29B8D;">Location: <%= @outing.location %></h3>
+<h3 style="text-align:center; color:#A29B8D;">Date: <%= @outing.date %></h3>
+<h3 style="text-align:center; color:#A29B8D;">Count of Contestants: <%= @outing.cont_count %></h3>
+<h3 style="text-align:center; color:#A29B8D;"><i>Contestants: 
+  <% @outing.contestants.each do |c| %>
+    <%= c.name %>, 
+  <% end %>
+</i></h3>

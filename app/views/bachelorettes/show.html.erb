@@ -2,5 +2,7 @@
 <h2 style="text-align:center; color:#A29B8D">Name: <%= @bach.name %></h2>
 <h2 style="text-align:center; color:#A29B8D">Season: <%= @bach.season_number %></h2>
 <h3 style="text-align:center; color:#A29B8D">Season Description: <%= @bach.season_description %></h3>
+<h3 style="text-align:center; color:#A29B8D">Average Age of Contestants: <%= @bach.avg_cont_age %></h3>
 
 <b><%= link_to 'See Contestants', bachelorette_contestants_path(@bach), class: 'css_class', style: 'color:#C6B9A6;' %></b>
+

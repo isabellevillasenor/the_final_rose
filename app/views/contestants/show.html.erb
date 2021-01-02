@@ -1,0 +1,11 @@
+<h1 style="text-align:center; color:#D4B1AA;"><%= @cont.name %></h1>
+
+<h3 style="text-align:center; color:#A29B8D;">Season 
+  <%= @cont.bachelorette.season_number %> - <%= @cont.bachelorette.season_description %>
+</h3>
+
+<h4 style="text-align:center; color:#BAAE9C;">Outings <%= @cont.name %> Went On<br>
+  <% @cont.outings.each do |o| %>
+    - <i><%= link_to o.name, outing_path(o), class: 'css_class', style: 'color:#BAAE9C;' %></i><br>
+  <% end %>
+</h4>

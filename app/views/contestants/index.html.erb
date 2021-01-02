@@ -1,0 +1,8 @@
+<h1 style="text-align:center; color:#D4B1AA;"><%= @bach.name %>s Contestants</h1>
+
+<ul style="color:#A29B8D;">
+  <% @bach.contestants.each do |c| %>
+    <li><b>Name: </b><%= link_to c.name, contestant_path(c), class: 'css_class', style: 'color:#A29B8D;'%>,
+    <b>Age: </b><%= c.age %>, <b>Hometown: </b><%= c.hometown %></b></li>
+  <% end %>
+</ul>

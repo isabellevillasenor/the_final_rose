@@ -27,4 +27,9 @@ describe 'Bachelorette Show Page' do
     expect(current_path).to eq(bachelorette_contestants_path(@gala))
   end
 
+  it 'should display the average age of all contestants' do
+    expect(page).to have_content('Average Age of Contestants: ')
+    expect(page).to have_content(@gala.avg_cont_age)
+    expect(@gala.avg_cont_age).to eq(2003)
+  end
 end

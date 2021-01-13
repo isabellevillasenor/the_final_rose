@@ -1,5 +1,5 @@
 # Isabelle Villasenor's Complete Final Rose Application
-This was an optional practice from Turing's Backend Program that provided User Stories for student had to build a working app around.
+This was an optional practice from Turing's Backend Program that provided User Stories for students to build a working app around.
 
 # The Final Rose
 
